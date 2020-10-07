@@ -1,12 +1,8 @@
 package com.example;
-import java.util.function.Consumer;
-import java.util.function.Function;
 public class test {
     public static void main(String[] args){
         Integer counter = 0;
         AnotherLuckyIterator iterator = new AnotherLuckyIterator();
-        Consumer<Integer> consumer = aInt -> aInt++;
-        Function<Integer,Integer> function = aInt -> ++aInt;
         while (iterator.hasNext()){
             Lucky next = iterator.next();
             if (next.getLucky()){
